@@ -15,7 +15,8 @@ h1{
     padding: 20px;
     margin: 0;
     font-family: 'Merriweather', serif;
-    font-size: 1.7em;
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 
 h2,
@@ -26,6 +27,7 @@ p{
 h2{
     color: rgb(42, 44, 46);
     font-size: 1.2em;
+    padding: 10px;
 }
 
 p{
@@ -33,19 +35,15 @@ p{
     padding-bottom: 25px;
 }
 
-form{
-    background-color: white;
-}
 
+/*contact information items*/
 legend{
     text-align: left;
 }
 
-textarea{
-    width: 100%;
-    height: 90px;
-    background-color: rgb(226, 222, 222);
-    border:none;
+fieldset{
+    border: none;
+    width: 80%;
 }
 
 input,
@@ -53,11 +51,90 @@ select{
     background-color: rgb(226, 222, 222);
     border: none;
     width:100%;
-    height: 60px;
+    height: 2px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 20px;
 }
 
-fieldset{
+.container{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: nowrap;
+    width: 100%;
+    flex-direction: column;
     border: none;
+}
+
+label{
+    align-items: flex-start;
+    flex-grow: 1;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(189, 188, 188);
+}
+
+input:focus{
+    outline: 1px solid rgb(14, 14, 124);
+    color: black;
+    border-radius: 5px;
+}
+
+.contact,
+.news{
+    font-weight: bold;
+    justify-content: left;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    padding-left: 1px;
+    margin-top: 20px;
+}
+
+.top{
+    height:14px;
+    border-top:6px solid rgb(61, 62, 63);
+    border-bottom:3px solid rgb(61, 62, 63);
+    margin-bottom: 30px;
+}
+
+.bottom{
+    border-top:3px solid rgb(61, 62, 63);
+    margin-bottom: 30px;
+}
+
+::placeholder{
+    text-align: right;
+    font-style: italic;
+    color: rgb(180, 174, 174);
+    padding-right: 20px;
+    font-size: 1em;
+}
+
+/*newsletter*/
+
+.newsletter-p{
+    text-align: left;
+    padding-bottom: 10px;
+    margin-top: 2px;
+}
+
+.newsletter-p3{
+    text-align: left;
+    font-size: .92em;
+    padding-bottom:3px;
+}
+
+.copy{
+    font-size: .8em;
+}
+
+textarea{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(226, 222, 222);
+    border:none;
+    margin-bottom: 20px;
 }
 
 button{
@@ -74,89 +151,9 @@ button{
     padding-bottom: 30px;
 }
 
-/*items*/
-
-.container{
-    display:flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-flow: nowrap;
-    height: 500px;
-    width: 100%;
-    flex-direction: column;
-}
-
-label{
-    align-items: flex-start;
-    flex-grow: 1;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    color: rgb(189, 188, 188);
-}
-
-input [for="zip-code"]{
-    flex-grow: .5;
-}
-
-input{
-    flex-grow: 1;
-    width: 100%;
-    height: 300px;
-}
-
-input:focus{
-    outline: 1px solid rgb(14, 14, 124);
-    color: black;
-}
-
-.contact,
-.news{
-    font-weight: bold;
-    justify-content: left;
-    padding-bottom: 10px;
-    font-size: 1.2em;
-}
-
-.top{
-    height:14px;
-    border-top:6px solid rgb(61, 62, 63);
-    border-bottom:3px solid rgb(61, 62, 63);
-}
-
-.bottom{
-    border-top:3px solid rgb(61, 62, 63);
-}
-
-::placeholder{
-    text-align: right;
-    font-style: italic;
-    color: rgb(180, 174, 174);
-    padding-right: 20px;
-    font-size: 1em;
-}
-
-.newsletter-p{
-    text-align: left;
-    padding-bottom: 10px;
-}
-
-.newsletter-p3{
-    text-align: left;
-    font-size: .95em;
-    padding-bottom:3px;
-}
-
-.copy{
-    font-size: .8em;
-}
-
-.checkbox,
-.radio{
-    flex-grow:1;
-}
 
 
-@media screen and (min-width: px(768)) {
+@media screen and (min-width: 768px) {
 
 
 
