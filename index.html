@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
     <title class="name">Project 3 Online Registration Form</title>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
@@ -97,7 +98,7 @@
     <fieldset class="newsletter container">
       <legend class="news">Newsletter</legend>
       <p class="newsletter-p">Select the newsletters you would like to receive.</p>
-      <input type="checkbox" id="html-news" name="html-news" value="html"> 
+      <div class="inline-field"><input type="checkbox" id="html-news" name="html-news" value="html"> 
       <label for="html-news">HTML News</label>
       <input type="checkbox" id="css-news" name="css-news" value="css">
       <label for="css-news">CSS News</label>
@@ -109,7 +110,7 @@
       <label for="html-format">HTML</label>
       <input type="radio" id="plain-format" name="plain-format" value="plain-format">
       <label for="plain-format">Plain text</label>
-      
+    </div>
 
       <p class="newsletter-p3">Other topics you'd like to hear about</p>
       <textarea id="topics" name="user-topics"></textarea>
@@ -122,5 +123,6 @@
   <footer>
 <p class="copy">Copyright The Code Review</p>
   </footer>
+
 </body>
 </html>
