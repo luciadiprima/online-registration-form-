@@ -56,6 +56,10 @@ select{
     padding: 20px;
 }
 
+input{
+margin-top:10px;
+
+}
 .container{
     display:flex;
     justify-content: space-around;
@@ -112,8 +116,12 @@ input:focus{
 
 input[name="user-zip-code"]{
     max-width: 50%;
+    margin-right:80px;
     }
-
+.flex{
+    flex-direction: row;
+    margin:5px;
+}
 /*newsletter*/
 
 .newsletter-p{
@@ -133,10 +141,24 @@ input[name="user-zip-code"]{
 }
 
 .inline-field{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 0;
     vertical-align: middle;
 }
+
+input[type="radio"],
+input[type="checkbox"]{
+    width:10%;
+    margin:8px;
+}
+
+.flex_box{
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
 
 label [name="html-news"]{
     margin-left: 100px;
@@ -186,14 +208,52 @@ button{
 
         .container{
             display:flex;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
+            flex-grow: 2;
             justify-content: center;
             margin-left:115px;
+            margin-right: 115px;
+            min-width: 0 auto;
+        }
 
+       .flex{
+        flex-wrap:nowrap;
+        flex-grow: 1;
+        min-width: 100%;
+        display:flex;
+       }
+
+       
+        input[type="text"]{
+            max-width: 100%;
+            flex-flow: row;
+            flex-wrap: nowrap;
+            width: 70%;
         }
 
         input[name="user-zip-code"]{
-        max-width: 50%;
+            max-width: 50%;
+            padding-right: 100px;
+            padding-left: 10px;
         }
+
+        label[for="zip-code"]{
+            margin-right: 5px;
+        }
+
+        input[name="user-state"]{
+            max-width: 50%;
+            padding-right:80px;
+        }
+
+        label[for="state"]{
+            padding-right:104px;
+        }
+
+
+
+
+
+       
 
 }
