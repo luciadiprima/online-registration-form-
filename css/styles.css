@@ -62,7 +62,6 @@ select{
     align-items: flex-start;
     flex-flow: nowrap;
     width: 100%;
-    height: 0 auto;
     flex-direction: column;
     border: none;
 }
@@ -137,7 +136,11 @@ input[name="user-zip-code"]{
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
-    align-items: left;
+}
+
+label [name="html-news"]{
+    margin-left: 100px;
+    padding-left: 100px;
 }
 
 textarea{
@@ -167,7 +170,7 @@ button{
 @media screen and (min-width: 768px) {
     
         h1{
-            max-width: 768ps;
+            max-width: 768px;
         }
 
 
@@ -177,10 +180,15 @@ button{
             justify-content: center;
         }
 
+        .bottom{
+            margin-left: 115px;
+        }
+
         .container{
             display:flex;
             flex-wrap: nowrap;
             justify-content: center;
+            margin-left:115px;
 
         }
 
