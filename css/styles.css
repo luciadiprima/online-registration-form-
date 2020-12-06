@@ -114,10 +114,15 @@ input:focus{
     font-size: 1em;
 }
 
+.option{
+    color: rgb(180, 174, 174);  
+}
+
 input[name="user-zip-code"]{
     max-width: 50%;
     margin-right:80px;
     }
+
 .flex{
     flex-direction: row;
     margin:5px;
@@ -213,7 +218,7 @@ button{
             justify-content: center;
             margin-left:115px;
             margin-right: 115px;
-            min-width: 0 auto;
+            min-width: 0;
         }
 
        .flex{
