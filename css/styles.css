@@ -232,13 +232,11 @@ button{
         }
 
         input[name="user-zip-code"]{
-            max-width: 50%;
-            padding-right: 100px;
-            padding-left: 10px;
+            max-width: 52.5%;
         }
 
         label[for="zip-code"]{
-            margin-right: 5px;
+            margin-right: 50px;
         }
 
         input[name="user-state"]{
